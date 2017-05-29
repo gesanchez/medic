@@ -1,0 +1,107 @@
+@import "./bootstrap/bootstrap.less";
+@import "./fontawesome/font-awesome.less";
+@import "./mixins.less";
+@import "./mp.less";
+
+.no-padding-sides {
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  & .title {
+      margin: 0px;
+      font-size: 30px;
+  }
+}
+
+.shape {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+    padding-top: 100px;
+}
+
+.circle {
+    background-color: #CCC;
+    width: 80px;
+    height: 80px;
+    .border-radius(50%);
+    display: inline-block;
+}
+
+.section{
+    background-color: #2980b9;
+    color: #FFF;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+    font-size: 30px;
+    &.with-title{
+        height: 50px;
+    }
+    &.big {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        & h3 {
+            padding-left: 20px;
+        }
+    }
+}
+
+.thumbnail {
+    padding: 0px;
+    border: 0px;
+    & .caption {
+        background-color: #ecf0f1;
+        color: #bdc3c7;
+
+    }
+}
+
+ul > li {
+    font-size: 18px;
+    list-style: none;
+}
+
+.footer{
+    margin-bottom: 20px;
+    & .icon {
+        display: inline-block;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        & span {
+            display: inline-block;
+            vertical-align: middle;
+            color: #8e44ad;
+        }
+        & i {
+            background-color: #8e44ad;
+            color: #FFF;
+            padding: 5px;
+            .border-radius(50%);
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border: 1px solid #8e44ad;
+            &:hover {
+                background-color: #FFF;
+                color: #8e44ad;
+            }
+        }
+    }
+}

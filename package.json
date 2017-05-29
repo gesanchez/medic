@@ -1,0 +1,13 @@
+{
+  "name": "sara",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "German Sanchez",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
